@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Volo's Waterdeep Enchiridion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-theme w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Waterdeep<br>Enchiridion</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-large">
+        Places <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="seaward.html" class="w3-bar-item w3-button">Sea Ward</a>
+        <a href="northward.html" class="w3-bar-item w3-button">North Ward</a>
+        <a href="castleward.html" class="w3-bar-item w3-button">Castle Ward</a>
+        <a href="tradesward.html" class="w3-bar-item w3-button">Trades Ward</a>
+        <a href="southernward.html" class="w3-bar-item w3-button">Southern Ward</a>
+        <a href="dockward.html" class="w3-bar-item w3-button">Dock Ward</a>
+        <a href="cityofthedead.html" class="w3-bar-item w3-button">City of the Dead</a>
+        <a href="walkingstatues.html" class="w3-bar-item w3-button">The Walking Statues</a>
+        <a href="outskirts.html" class="w3-bar-item w3-button">City Outskirts</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-large">
+        People & Organisations <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button">Lords of Waterdeep</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button">Law Enforcement</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button">Guilds</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button">Temples</a>
+      </div>
+    </div>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">The Code Legal</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Events</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-theme w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-theme w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Volo's Waterdeep Enchiridion</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;">
+  <!-- Header -->
+  <header class="w3-container w3-light-grey w3-center" style="padding:100px 16px">
+    <h1>Waterdeep Events</h1>
+    <p class="w3-xlarge"></p>
+  </header>
+  
+  <h2 class="w3-center">Spring</h2>
+  <button onclick="myAccFunc('Rhyestertide')" class="w3-padding-16 w3-theme-l4 w3-button w3-block w3-left-align">Rhyestertide</button>
+  <div id="Rhyestertide" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('FeyDay')" class="w3-padding-16 w3-theme-l4 w3-button w3-block w3-left-align">Fey Day</button>
+  <div id="FeyDay" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('Fleetswake')" class="w3-padding-16 w3-theme-l4 w3-button w3-block w3-left-align">Fleetswake</button>
+  <div id="Fleetswake" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('Waukeentide')" class="w3-padding-16 w3-theme-l4 w3-button w3-block w3-left-align">Waukeentide</button>
+  <div id="Waukeentide" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('PlowingRunning')" class="w3-padding-16 w3-theme-l4 w3-button w3-block w3-left-align">The Plowing and Running</button>
+  <div id="PlowingRunning" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+
+  <h2 class="w3-center">Summer</h2>
+  <button onclick="myAccFunc('Trolltide')" class="w3-padding-16 w3-theme-l2 w3-button w3-block w3-left-align">Trolltide</button>
+  <div id="Trolltide" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('GuildhallDay')" class="w3-padding-16 w3-theme-l2 w3-button w3-block w3-left-align">Guildhall Day</button>
+  <div id="GuildhallDay" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('Dragondown')" class="w3-padding-16 w3-theme-l2 w3-button w3-block w3-left-align">Dragondown</button>
+  <div id="Dragondown" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('FoundersDay')" class="w3-padding-16 w3-theme-l2 w3-button w3-block w3-left-align">Founder's Day</button>
+  <div id="FoundersDay" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('Sornyn')" class="w3-padding-16 w3-theme-l2 w3-button w3-block w3-left-align">Sornyn</button>
+  <div id="Sornyn" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('LliirasNight')" class="w3-padding-16 w3-theme-l2 w3-button w3-block w3-left-align">Lliira's Night</button>
+  <div id="LliirasNight" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('AhghaironsDay')" class="w3-padding-16 w3-theme-l2 w3-button w3-block w3-left-align">Ahghairon's Day</button>
+  <div id="AhghaironsDay" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+
+  <h2 class="w3-center">Autumn</h2>
+  <button onclick="myAccFunc('Brightswords')" class="w3-padding-16 w3-theme-d1 w3-button w3-block w3-left-align">Brightswords</button>
+  <div id="Brightswords" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('DayofWonders')" class="w3-padding-16 w3-theme-d1 w3-button w3-block w3-left-align">Day of Wonders</button>
+  <div id="DayofWonders" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('Stoneshar')" class="w3-padding-16 w3-theme-d1 w3-button w3-block w3-left-align">Stoneshar</button>
+  <div id="Stoneshar" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('ReignofMisrule')" class="w3-padding-16 w3-theme-d1 w3-button w3-block w3-left-align">Reign of Misrule</button>
+  <div id="ReignofMisrule" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('GodsDay')" class="w3-padding-16 w3-theme-d1 w3-button w3-block w3-left-align">Gods' Day</button>
+  <div id="GodsDay" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('LiarsNight')" class="w3-padding-16 w3-theme-d1 w3-button w3-block w3-left-align">Liar's Night</button>
+  <div id="LiarsNight" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('SelunesHallowing')" class="w3-padding-16 w3-theme-d1 w3-button w3-block w3-left-align">Selune's Hallowing</button>
+  <div id="SelunesHallowing" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('LastSheaf')" class="w3-padding-16 w3-theme-d1 w3-button w3-block w3-left-align">Last Sheaf</button>
+  <div id="LastSheaf" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+
+  <h2 class="w3-center">Winter</h2>
+  <button onclick="myAccFunc('Howldown')" class="w3-padding-16 w3-theme-d5 w3-button w3-block w3-left-align">Howldown</button>
+  <div id="Howldown" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('Simril')" class="w3-padding-16 w3-theme-d5 w3-button w3-block w3-left-align">Simril</button>
+  <div id="Simril" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('Wintershield')" class="w3-padding-16 w3-theme-d5 w3-button w3-block w3-left-align">Wintershield</button>
+  <div id="Wintershield" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <button onclick="myAccFunc('GrandRevel')" class="w3-padding-16 w3-theme-d5 w3-button w3-block w3-left-align">The Grand Revel</button>
+  <div id="GrandRevel" class="w3-hide">
+    <div class="w3-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <p>"Set your course by the truth and you shall never be lost, no matter how far you wander." - Volothamp Geddarm</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and Wizards of the Coast</p>
+  </footer>
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Accordions
+  function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>

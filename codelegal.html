@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Volo's Waterdeep Enchiridion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-gavel {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-theme w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Waterdeep<br>Enchiridion</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-large">
+        Places <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="seaward.html" class="w3-bar-item w3-button">Sea Ward</a>
+        <a href="northward.html" class="w3-bar-item w3-button">North Ward</a>
+        <a href="castleward.html" class="w3-bar-item w3-button">Castle Ward</a>
+        <a href="tradesward.html" class="w3-bar-item w3-button">Trades Ward</a>
+        <a href="southernward.html" class="w3-bar-item w3-button">Southern Ward</a>
+        <a href="dockward.html" class="w3-bar-item w3-button">Dock Ward</a>
+        <a href="cityofthedead.html" class="w3-bar-item w3-button">City of the Dead</a>
+        <a href="walkingstatues.html" class="w3-bar-item w3-button">The Walking Statues</a>
+        <a href="outskirts.html" class="w3-bar-item w3-button">City Outskirts</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-large">
+        People & Organisations <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button">Lords of Waterdeep</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button">Law Enforcement</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button">Guilds</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button">Temples</a>
+      </div>
+    </div>
+    <a href="codelegal.html" class="w3-bar-item w3-button w3-padding-large">The Code Legal</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Events</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-theme w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-theme w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Volo's Waterdeep Enchiridion</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;">
+  <!-- Intro -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Waterdavian Justice System</h1>
+        <p class="w3-text-grey">Waterdeep is no village led by hidebound hierarchs or petty fiefdom ruled by the whim of a warlord. It is a city of laws molded by Tyr's spirit of justice. As a rule, you can trust members of the City Watch to do their duty diligently, and you can expect that the city's magisters will be fair. If you have cause to come before the Masked Lords or the Open Lord herself, rest assured that if your cause be just, justice will be done. If, however, you find yourself in the wrong, know that though it might take time to weigh that wrong on Tyr's scales, his hammer will fall-and it will be wielded by Waterdeep with a vengeance. </p>
+        <p class="w3-text-grey">Waterdeep has a complex library of law and custom set by precedent, the main body of which can be read in the Code Legal. I have provided a version below, though this document is available in more languages at the Palace of Waterdeep and (in the Common tongue) provided on request by the magisters at the gates and in the harbor. Be aware that the Code Legal provides only an outline of typical sentences for various offenses, and magisters have broad discretion when meting out justice as they see fit. Any Masked Lord can overturn a magister's ruling, but there's rarely a Masked Lord around when you need one. </p>
+      </div>
+
+      <div class="w3-third w3-center">
+        <i class="fa fa-gavel w3-padding-64 w3-text-theme"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Code Legal -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <h2 class="w3-padding-32">The Code Legal</h2>
+      <p class="w3-text-grey">Punishment for a crime can include one or more of the following, based on the nature of the crime, who or what the crime is committed against, and the criminal record of the convicted:</p>
+      <ul class="w3-ul w3-margin-bottom w3-text-grey">
+        <li>Death</li>
+        <li>Exile (for a number of years or summers)</li>
+        <li>Hard labour (for a period of days, months, or years depending on the seriousness of the crime)</li>
+        <li>Imprisonment in the dungeons of Castle Waterdeep (for a period of days, months, or years depending on the seriousness of the crime)</li>
+        <li>Fine (payable to the city; inability to pay the fine leads to imprisonment and/or hard labour)</li>
+        <li>Damages (payable to the injured party or victim's kin; inability to pay damages leads to imprisonment and/or hard labour)</li>
+        <li>Edict (forbidding the convicted from doing something; violation of an edict can result in imprisonment, hard labour, and/or a fine)</li>
+      </ul>
+        <p class="w3-text-grey">Crimes can fall into the following four categories:</p>
+
+    <!-- Groups for Law Enforcement -->
+        <h2 class="w3-padding-32">Law Enforcement</h2>
+        <!-- City Watch -->
+          <h5 class="w3-padding-32">City Watch</h5>
+          <p class="w3-text-grey">The walking statue called the Griffon is shaped like the beast for which it is named. Though it stands on all four legs, its back is fully twenty feet off the ground, making it a mount fit for a storm giant. Although it has shown itself to be capable of flight, with the granite feathers of its wings spreading like a bird's, the Griffon now merely stands in a regal pose near Peaktop Aerie atop Mount
+            Waterdeep, looking to the southeast over the Dock Ward. Newcomers sometimes assume it to be a monument to Waterdeep's Griffon Cavalry, but Waterdavians know better.</p>
+
+         <!-- Watchful Order -->
+          <h5 class="w3-padding-32">The Watchful Order of Magists and Protectors</h5>
+          <p class="w3-text-grey">For years, the only visible walking statue of Waterdeep was known simply as "the walking statue." It stood at the foot of Mount Waterdeep near the head of Julthoon Street. Then, after its critical role in defending the city against an invasion of sahuagin in 1370 DR, Khelben Blackstaff reshaped the statue into a sahuagin. It now bows low toward the House of Heroes on bended knee-a gesture of obeisance to the city, and an acknowledgment of the sacrifice of all who fought for the city in that war. </p>
+
+        <!-- Griffon Cavalry -->
+          <h5 class="w3-padding-32">Griffon Cavalry</h5>
+          <p class="w3-text-grey">This walking statue stopped its rampage as it approached the Market, then fell backward and sat upon a building. When it settled, its arms fell limp at its sides and its head tilted forward onto its chest, giving the impression that it had fallen asleep. The statue's huge stone battleaxe still stands nearby, its haft angled upright and its blade half buried in the cobbles. The rubble of the crushed building was long ago rebuilt into a broad stone stair (with railings and a ramp that drunkards are often rolled down) that ascends from the cobbles to the statue's lap. That lap now holds a two-story tavern also built from the rubble, called Gralkyn's Tankard. The unconscious pose of the statue and the tavern in its lap made the name of the Great Drunkard a natural fit. </p>
+
+        <!-- Force Grey -->
+          <h5 class="w3-padding-32">Force Grey</h5>
+          <p class="w3-text-grey">This fair lady caused much chaos when she was active. The statue has the appearance of a female elf, whose hair and clothing appeared to flow naturally as it walked through the city during the Spellplague. When the walking statues stopped, this one toppled onto its side, taking on the appearance of a titanic sculpture of a noble lady asleep in her garden. </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <p>"Set your course by the truth and you shall never be lost, no matter how far you wander." - Volothamp Geddarm</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and Wizards of the Coast</p>
+  </footer>
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
