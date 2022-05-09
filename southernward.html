@@ -25,35 +25,32 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button w3-padding-large">
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="placesToggle()">
         Places <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-        <a href="seaward.html" class="w3-bar-item w3-button">Sea Ward</a>
-        <a href="northward.html" class="w3-bar-item w3-button">North Ward</a>
-        <a href="castleward.html" class="w3-bar-item w3-button">Castle Ward</a>
-        <a href="tradesward.html" class="w3-bar-item w3-button">Trades Ward</a>
-        <a href="southernward.html" class="w3-bar-item w3-button">Southern Ward</a>
-        <a href="dockward.html" class="w3-bar-item w3-button">Dock Ward</a>
-        <a href="cityofthedead.html" class="w3-bar-item w3-button">City of the Dead</a>
-        <a href="walkingstatues.html" class="w3-bar-item w3-button">The Walking Statues</a>
-        <a href="outskirts.html" class="w3-bar-item w3-button">City Outskirts</a>
-      </div>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="places">
+      <a href="seaward.html" class="w3-bar-item w3-button">Sea Ward</a>
+      <a href="northward.html" class="w3-bar-item w3-button">North Ward</a>
+      <a href="castleward.html" class="w3-bar-item w3-button">Castle Ward</a>
+      <a href="tradesward.html" class="w3-bar-item w3-button">Trades Ward</a>
+      <a href="southernward.html" class="w3-bar-item w3-button">Southern Ward</a>
+      <a href="dockward.html" class="w3-bar-item w3-button">Dock Ward</a>
+      <a href="cityofthedead.html" class="w3-bar-item w3-button">City of the Dead</a>
+      <a href="walkingstatues.html" class="w3-bar-item w3-button">The Walking Statues</a>
+      <a href="outskirts.html" class="w3-bar-item w3-button">City Outskirts</a>
     </div>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button w3-padding-large">
-        People & Organisations <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-        <a href="javascript:void(0)" class="w3-bar-item w3-button">Lords of Waterdeep</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button">Law Enforcement</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button">Guilds</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button">Temples</a>
-      </div>
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="pplToggle()">
+      Organisations <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="ppl">
+      <a href="lords.html" class="w3-bar-item w3-button">Lords of Waterdeep</a>
+      <a href="lawenforcement.html" class="w3-bar-item w3-button">Law Enforcement</a>
+      <a href="guilds.html" class="w3-bar-item w3-button">Guilds</a>
+      <a href="temples.html" class="w3-bar-item w3-button">Temples</a>
     </div>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">The Code Legal</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Events</a>
+    <a href="codelegal.html" class="w3-bar-item w3-button w3-padding-large">The Code Legal</a>
+    <!--a href="events.html" class="w3-bar-item w3-button w3-padding-large">Events</a-->
+    <a href="map.html" class="w3-bar-item w3-button w3-padding-large">Map</a>
   </div>
 </nav>
 
@@ -102,6 +99,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
+  }
+
+  function placesToggle() {
+    var place =  document.getElementById("places");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
+  }
+   
+  function pplToggle() {
+    var place =  document.getElementById("ppl");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
   }
 </script>
 
