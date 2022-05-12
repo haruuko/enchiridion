@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Volo's Waterdeep Enchiridion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-fort-awesome {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-theme w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Waterdeep<br>Enchiridion</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="../codelegal.html" class="w3-bar-item w3-button w3-padding-large">The Code Legal</a>
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="pplToggle()">
+      Organisations <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="ppl">
+      <a href="../groups/lords.html" class="w3-bar-item w3-button">Lords of Waterdeep</a>
+      <a href="../groups/lawenforcement.html" class="w3-bar-item w3-button">Law Enforcement</a>
+      <a href="../groups/guilds.html" class="w3-bar-item w3-button">Guilds</a>
+      <a href="../groups/temples.html" class="w3-bar-item w3-button">Temples</a>
+    </div>
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="placesToggle()">
+        Places <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="places">
+      <a href="../places/seaward.html" class="w3-bar-item w3-button">Sea Ward</a>
+      <a href="../places/northward.html" class="w3-bar-item w3-button">North Ward</a>
+      <a href="../places/castleward.html" class="w3-bar-item w3-button">Castle Ward</a>
+      <a href="../places/tradesward.html" class="w3-bar-item w3-button">Trades Ward</a>
+      <a href="../places/southernward.html" class="w3-bar-item w3-button">Southern Ward</a>
+      <a href="../places/dockward.html" class="w3-bar-item w3-button">Dock Ward</a>
+      <a href="../places/cityofthedead.html" class="w3-bar-item w3-button">City of the Dead</a>
+      <a href="../places/walkingstatues.html" class="w3-bar-item w3-button">The Walking Statues</a>
+      <a href="../places/outskirts.html" class="w3-bar-item w3-button">City Outskirts</a>
+    </div>
+    <!--a href="events.html" class="w3-bar-item w3-button w3-padding-large">Events</a-->
+    <a href="../map.html" class="w3-bar-item w3-button w3-padding-large">Map</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-theme w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-theme w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Volo's Waterdeep Enchiridion</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;">
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Castle Ward</h1>
+        <p class="w3-text-grey">The Castle Ward is the heart and mind of Waterdeep, if not its soul. It houses the city's military forces, courts, government, and the Market-the largest market square of any city in the North. It encompasses the City Navy's docks in the Great Harbor and all of Mount Waterdeep, and it is home to six walking statues, numerous temples, and many other landmarks. </p>
+        <p class="w3-text-grey">Castle Waterdeep stands above the city on a great bluff that extends out from the mountain, its towers soaring hundreds of feet into the sky. It surprises many to learn that this isn't where Waterdeep's rulers reside, nor from where the city is governed. The castle was and is a redoubt of last defense should the city be attacked, but for well over a century, the ruler of Waterdeep has occupied the Palace of Waterdeep-also known as Piergeiron's Palace, and still called that by elderly and longlived citizens. </p>
+        <p class="w3-text-grey">Though not quite as large as the castle, the palace is far more comfortable and lavishly decorated, with many halls used by government officials, guildmasters, and nobles for meetings and court proceedings. If you have reason to be invited (not compelled, I should hope!) to meet with the Masked Lords or the Open Lord of Waterdeep, it will likely take place in the audience chamber of the palace. There, you can witness the ancient and humble throne that Ahghairon first sat upon so long ago. </p>
+        <p class="w3-text-grey">Many other buildings in the ward are given over to city business, including several courts for magisters and the barracks of the City Guard. So many of the ward's structures are offices and meeting halls for business owners, solicitors, publishers, and the like that the Castle Ward has the smallest resident population of all the wards. </p>
+        <p class="w3-text-grey">Many landmarks of interest are found in this ward aside from the six walking statues. You could hardly see them all in a day, but the following are highly recommended. </p>
+        <p class="w3-text-grey">Blackstaff Tower is a squat black blot in the otherwise pretty ward. Humble though the edifice might be, looking at the place for too long can give you a queasy feeling and the sense that you are being watched-almost as if the tower itself has turned an unseen and wrathful eye upon you. Perhaps you think this fanciful. Well, go and try it yourself! </p>
+        <p class="w3-text-grey">On the opposite end of the mountain, close to the Naval Harbor, stands Mirt's Mansion. Once a fortress-like and glowering tower, it has been upgraded with more delicate fashions of architecture since the return of its long-absent owner.</p>
+        <p class="w3-text-grey">The glorious Spires of the Morning, dedicated to Lathander, is one of Waterdeep's most beautiful temples. But it is rivaled in this ward by the Temple of the Seldarine, dedicated to all the elf gods. The journey through Mount Melody Walk, a tunnel cut through Mount Waterdeep, to New Olamn's academy of music and other arts is a wondrous daytime excursion. The Market offers a wild array of sights, smells, and sounds in which folk might lose themselves for a tenday. The Font of Knowledge is a temple to Oghma, yes, but also the city's largest public library. Titles written throughout the ages can be viewed here-under the watchful eyes of the temple's priests. In short (if I can claim this section of the enchiridion to be such), the Castle Ward offers far too many splendors to list them all here.</p>
+      </div>
+
+      <div class="w3-third w3-center">
+        <i class="fa fa-fort-awesome w3-padding-64 w3-text-theme"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <p>"Set your course by the truth and you shall never be lost, no matter how far you wander." - Volothamp Geddarm</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and Wizards of the Coast</p>
+  </footer>
+</div>  
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  function placesToggle() {
+    var place =  document.getElementById("places");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
+  }
+   
+  function pplToggle() {
+    var place =  document.getElementById("ppl");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>

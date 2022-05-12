@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Volo's Waterdeep Enchiridion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-university {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-theme w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Waterdeep<br>Enchiridion</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="../codelegal.html" class="w3-bar-item w3-button w3-padding-large">The Code Legal</a>
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="pplToggle()">
+      Organisations <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="ppl">
+      <a href="lords.html" class="w3-bar-item w3-button">Lords of Waterdeep</a>
+      <a href="lawenforcement.html" class="w3-bar-item w3-button">Law Enforcement</a>
+      <a href="guilds.html" class="w3-bar-item w3-button">Guilds</a>
+      <a href="temples.html" class="w3-bar-item w3-button">Temples</a>
+    </div>
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="placesToggle()">
+        Places <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="places">
+      <a href="../places/seaward.html" class="w3-bar-item w3-button">Sea Ward</a>
+      <a href="../places/northward.html" class="w3-bar-item w3-button">North Ward</a>
+      <a href="../places/castleward.html" class="w3-bar-item w3-button">Castle Ward</a>
+      <a href="../places/tradesward.html" class="w3-bar-item w3-button">Trades Ward</a>
+      <a href="../places/southernward.html" class="w3-bar-item w3-button">Southern Ward</a>
+      <a href="../places/dockward.html" class="w3-bar-item w3-button">Dock Ward</a>
+      <a href="../places/cityofthedead.html" class="w3-bar-item w3-button">City of the Dead</a>
+      <a href="../places/walkingstatues.html" class="w3-bar-item w3-button">The Walking Statues</a>
+      <a href="../places/outskirts.html" class="w3-bar-item w3-button">City Outskirts</a>
+    </div>
+    <!--a href="events.html" class="w3-bar-item w3-button w3-padding-large">Events</a-->
+    <a href="../map.html" class="w3-bar-item w3-button w3-padding-large">Map</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-theme w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-theme w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Volo's Waterdeep Enchiridion</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;">
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Lords of Waterdeep</h1>
+        <h3>History of Waterdavian Government</h3>
+        <p class="w3-text-grey">People have inhabited the plateau upon which Waterdeep stands for longer than histories record. But as is the way across the dangerous North, civilization at the foot of Mount Waterdeep has crested and ebbed in great waves. Elf scholars assure me that it was once the site of the capital of their ancient empire. So it was already a glorious place when dwarven prospectors discovered mithral beneath the mountain. Years of turmoil between warring Elvish factions, while the dwarfs tunneled ever deeper, never to be heard from again, left the area empty and suitable for the human tribes that would come to inhabit the area. More warlords came and went as the harbour grew. That is, until a great wizard named Ahghairon defeated the then Warlord of Waterdeep in order to stop his conquest of the North. Ahghairon then gathered the leaders of Waterdeep's armies and powerful families and decreed how the city would be governed. While he would sit as lord openly, a council of other lords of nearly equal power would rule with him. But the identity of those other lords would be hidden even from each other, thus preventing any of them from being approached and influenced by bribe or threat. </p>
+        
+      </div>
+
+      <div class="w3-third w3-center">
+        <i class="fa fa-university w3-padding-64 w3-text-theme"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <h3>The Open Lord</h3>
+      <p class="w3-text-grey">Lady Laeral Silverhand is the current Open Lord of Waterdeep. She has recently risen to the role after the previous Open Lord, Dagult Neverember, was ousted from his position. There are many rumours as to what his offences were, but they all boil down to negligence of his duties and a general incompetence. In fact, he was still off in Neverwinter when the other Lords of Waterdeep voted him out! Fortunately, Lady Silverhand is a long-time resident and protector of the city, as well as a formidable mage. She was the obvious choice to the Masked Lords, and has so far served Waterdeep well. </p>
+      <h3>Nobility</h3>
+      <p class="w3-text-grey">In addition to the dwarf diplomats from Gauntlgrym, satraps of Arnn, duchesses of Tethyr, or thanes of the Northlanders you may encounter in Waterdeep, there are seventy-eight noble family lines are found here, many of which can trace their lineage back to the city's founding. Books have been written about individual families-histories of their accomplishments and how they fit into the webs of wealth and patronage that govern nobles' activities-so it is beyond the scope of a pamphlet this size to attempt to describe their particulars. I can, however, endeavor to equip you with the tools to recognize nobility and to interact with the higher class. Be polite! Always address a known noble by their title. A short bow or a nod of the head to acknowledge a noble upon each meeting and parting is customary. Obsequiousness and servility is something all Waterdavians scorn, but you should also beware of acting in an overly familiar, boastful, or disrespectful way when in the presence of any noble. Though this sort of behavior isn't a crime, and laws against dueling prevent a noble from initiating a direct armed confrontation, the noble families of Waterdeep have immense power in the city, often in unexpected quarters. Many have influence in nations as distant as Calimshan and Cormyr. Be assured that any slighting of a noble will not be forgotten or easily forgiven.</p>
+      <p class="w3-text-grey">In the words of a quarrelsome acquaintance of mine, "Before you strut your stuff in the chickens' preening circle, get to know the other cocks first." This colorful aphorism applies well to the affairs of nobility, because when you have interaction with a noble, you are at the same time dealing with one's entire family-as well as a network of business associates and allies. That situation can put you in a troublesome spot if you are unaware of the noble's connections. </p>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <p>"Set your course by the truth and you shall never be lost, no matter how far you wander." - Volothamp Geddarm</p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and Wizards of the Coast</p>
+  </footer>
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  function placesToggle() {
+    var place =  document.getElementById("places");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
+  }
+   
+  function pplToggle() {
+    var place =  document.getElementById("ppl");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>

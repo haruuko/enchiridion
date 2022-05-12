@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Volo's Waterdeep Enchiridion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-fire {font-size:200px}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #d1fef7;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-theme w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Waterdeep<br>Enchiridion</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="../codelegal.html" class="w3-bar-item w3-button w3-padding-large">The Code Legal</a>
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="pplToggle()">
+      Organisations <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="ppl">
+      <a href="lords.html" class="w3-bar-item w3-button">Lords of Waterdeep</a>
+      <a href="lawenforcement.html" class="w3-bar-item w3-button">Law Enforcement</a>
+      <a href="guilds.html" class="w3-bar-item w3-button">Guilds</a>
+      <a href="temples.html" class="w3-bar-item w3-button">Temples</a>
+    </div>
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="placesToggle()">
+        Places <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="places">
+      <a href="../places/seaward.html" class="w3-bar-item w3-button">Sea Ward</a>
+      <a href="../places/northward.html" class="w3-bar-item w3-button">North Ward</a>
+      <a href="../places/castleward.html" class="w3-bar-item w3-button">Castle Ward</a>
+      <a href="../places/tradesward.html" class="w3-bar-item w3-button">Trades Ward</a>
+      <a href="../places/southernward.html" class="w3-bar-item w3-button">Southern Ward</a>
+      <a href="../places/dockward.html" class="w3-bar-item w3-button">Dock Ward</a>
+      <a href="../places/cityofthedead.html" class="w3-bar-item w3-button">City of the Dead</a>
+      <a href="../places/walkingstatues.html" class="w3-bar-item w3-button">The Walking Statues</a>
+      <a href="../places/outskirts.html" class="w3-bar-item w3-button">City Outskirts</a>
+    </div>
+    <!--a href="events.html" class="w3-bar-item w3-button w3-padding-large">Events</a-->
+    <a href="../map.html" class="w3-bar-item w3-button w3-padding-large">Map</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-theme w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-theme w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Volo's Waterdeep Enchiridion</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;">
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Temples</h1>
+        <p class="w3-text-grey">The many temples of Waterdeep are some of the most breathtaking sights in the city. I have listed the oldest and most grand locations below, which are definitely a worthwhile visit regardless of one's own faith. For the pious looking for their own congregation, these temples cover a variety of dieties and are always welcoming newcomers. There are also many smaller religious communities-too many for me to list here!</p>
+        <p class="w3-text-grey">More detailed descriptions of a temple can be found in its associated ward section.</p>
+      </div>
+      
+      <div class="w3-third w3-center">
+        <i class="fa fa-fire w3-padding-64 w3-text-theme"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Grid -->
+    <div class="w3-content">
+      <table>
+        <tr>
+          <th>Deity or Deities</th>
+          <th>Temple Name</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>All deities</td>
+          <td>Holyhands House</td>
+          <td>North Ward</td>
+        </tr>
+        <tr>
+          <td>All elven deities</td>
+          <td>Temple of the Seldarine</td>
+          <td>Castle Ward</td>
+        </tr>
+        <tr>
+          <td>Gond</td>
+          <td>House of Inspired Hands</td>
+          <td>Sea Ward</td>
+        </tr>
+        <tr>
+          <td>Helm</td>
+          <td>Helm's Hall</td>
+          <td>Southern Ward</td>
+        </tr>
+        <tr>
+          <td>Ilmater</td>
+          <td>Hospice of St. Laupsenn</td>
+          <td>North Ward</td>
+        </tr>
+        <tr>
+          <td>Lathlander</td>
+          <td>Spires of the Morning</td>
+          <td>Castle Ward</td>
+        </tr>
+        <tr>
+          <td>Mielikki, Silvanus</td>
+          <td>Shrines of Nature</td>
+          <td>Sea Ward</td>
+        </tr>
+        <tr>
+          <td>Mystra</td>
+          <td>House of Wonder</td>
+          <td>Sea Ward</td>
+        </tr>
+        <tr>
+          <td>Oghma</td>
+          <td>Font of Knowledge</td>
+          <td>Castle Ward</td>
+        </tr>
+        <tr>
+          <td>Selûne</td>
+          <td>Tower of the Moon</td>
+          <td>Sea Ward</td>
+        </tr>
+        <tr>
+          <td>Sune</td>
+          <td>Temple of Beauty</td>
+          <td>Sea Ward</td>
+        </tr>
+        <tr>
+          <td>Tempus</td>
+          <td>House of Heroes</td>
+          <td>Sea Ward</td>
+        </tr>
+        <tr>
+          <td>Tymora</td>
+          <td>Tower of Luck</td>
+          <td>Castle Ward</td>
+        </tr>
+        <tr>
+          <td>Tyr</td>
+          <td>Halls of Justice</td>
+          <td>Castle Ward</td>
+        </tr>
+        <tr>
+          <td>Umberlee</td>
+          <td>The Queenspire</td>
+          <td>Beach</td>
+        </tr>
+      </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <p>"Set your course by the truth and you shall never be lost, no matter how far you wander." - Volothamp Geddarm</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and Wizards of the Coast</p>
+  </footer>
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  function placesToggle() {
+    var place =  document.getElementById("places");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
+  }
+   
+  function pplToggle() {
+    var place =  document.getElementById("ppl");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>

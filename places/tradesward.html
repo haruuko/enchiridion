@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Volo's Waterdeep Enchiridion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-try {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-theme w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Waterdeep<br>Enchiridion</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="../codelegal.html" class="w3-bar-item w3-button w3-padding-large">The Code Legal</a>
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="pplToggle()">
+      Organisations <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="ppl">
+      <a href="../groups/lords.html" class="w3-bar-item w3-button">Lords of Waterdeep</a>
+      <a href="../groups/lawenforcement.html" class="w3-bar-item w3-button">Law Enforcement</a>
+      <a href="../groups/guilds.html" class="w3-bar-item w3-button">Guilds</a>
+      <a href="../groups/temples.html" class="w3-bar-item w3-button">Temples</a>
+    </div>
+    <button class="w3-bar-item w3-button w3-padding-large" onclick="placesToggle()">
+        Places <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container w3-card-4 w3-bar-block" style="display: none; background-color:white; color: black;" id="places">
+      <a href="../places/seaward.html" class="w3-bar-item w3-button">Sea Ward</a>
+      <a href="../places/northward.html" class="w3-bar-item w3-button">North Ward</a>
+      <a href="../places/castleward.html" class="w3-bar-item w3-button">Castle Ward</a>
+      <a href="../places/tradesward.html" class="w3-bar-item w3-button">Trades Ward</a>
+      <a href="../places/southernward.html" class="w3-bar-item w3-button">Southern Ward</a>
+      <a href="../places/dockward.html" class="w3-bar-item w3-button">Dock Ward</a>
+      <a href="../places/cityofthedead.html" class="w3-bar-item w3-button">City of the Dead</a>
+      <a href="../places/walkingstatues.html" class="w3-bar-item w3-button">The Walking Statues</a>
+      <a href="../places/outskirts.html" class="w3-bar-item w3-button">City Outskirts</a>
+    </div>
+    <!--a href="events.html" class="w3-bar-item w3-button w3-padding-large">Events</a-->
+    <a href="../map.html" class="w3-bar-item w3-button w3-padding-large">Map</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-theme w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-theme w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Volo's Waterdeep Enchiridion</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;">
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Trades Ward</h1>
+        <p class="w3-text-grey">Shopping, shopping, shopping galore! Or eating, eating, eating! Or drinking, drinking, drinking! Or lavish accommodations, or fine art, or legendary parties! The Market in the Castle Ward is the largest market square in the city, but the Trades Ward is like a market town in itself-and is easily thrice the Market's size. </p>
+        <p class="w3-text-grey">This ward bustles day and night with activity, both on the street and on balcony walkways that run the length of blocks and are sometimes layered five stories high. Shop signs appear to leap out from buildings, whose sides are plastered with advertisements all vying for the attention of the eye. Glove shops, shoe shops, jewelry stores, perfumeries, flower shops, cake shops, taverns, cafes, tea shops, inns, row houses, boarding schools, offices, dance academies, grocers, pottery stores, armor vendors-as long as it's not illegal, you can find it in the Trades Ward. But if you are looking for something illegal, the Trades Ward is likely the place to get that too. Do not do so too loudly, though. The City Watch has a heavy presence in this ward, in the form of both open patrols and officers working out of uniform.</p>
+        <p class="w3-text-grey">As befits a place of so much business, many guilds have their halls in this ward. Of particular note is the House of Light, the hall of the Guild of Chandlers and Lamplighters. Outside the building, a wagon-sized mound of wax with hundreds of wicks is kept lit day and night, while being continually built up with adhered candles. Inside, the best works of the guild are put on display and sold, including not just candles of various colors, lamps, and chandeliers, but elaborate waxwork constructions that depict all sorts of subjects from personages of note, to dragons, to complex and abstract lattices-all represented as fantastical candles. </p>
+        <p class="w3-text-grey">Magic users should be wary in the Court of the White Bull. Long ago, this plaza was a grazing area for livestock, including an albino calf that was born here. The calf's owner built the White Bull Tavern, which thrived on the spot for years and gave the area its name. You'll not find the tavern now, though. It vanished, utterly destroyed during an infamous spell battle between the archmage Thongalar the Mighty and the evil mage Shile Rauretilar and his apprentices. In the storm of magic that touched down here, Shile and his apprentices all perished and the fabric of the Weave was rent, such that Azuth, god of wizards, was forced to appear and set things right. He is said to have stitched reality and the Weave back together, but a wrinkle in the fabric remains. To this day, magic brought to bear in the Court of the White Bull sometimes goes awry, and the use of magic items and spells is forbidden in the area. </p>
+      </div>
+      <div class="w3-third w3-center">
+        <i class="fa fa-try w3-padding-64 w3-text-theme"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <p>"Set your course by the truth and you shall never be lost, no matter how far you wander." - Volothamp Geddarm</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and Wizards of the Coast</p>
+  </footer>
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  function placesToggle() {
+    var place =  document.getElementById("places");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
+  }
+   
+  function pplToggle() {
+    var place =  document.getElementById("ppl");
+    if(place.style.display == "none"){
+      place.style.display = "block";
+    } else {
+      place.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
